@@ -227,9 +227,10 @@ select:-moz-focusring {
 
 body {
     --navy: #3D5368;
-    --navy-hover: rgb(59, 71, 84);
+    --navy-hover: #34495E;
+    --navy-text: #34495E;
     --navy-press: rgb(49, 58, 68);
-    --blue: rgb(49, 148, 219);
+    --blue: #39A3E5;
     --blue-hover: rgb(52, 161, 239);
     --green: #5fba7d;
     --green-hover: #57ae74;
