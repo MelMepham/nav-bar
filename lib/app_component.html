@@ -1,5 +1,8 @@
+<nav>
+    <a [routerLink]="RoutePaths.register.toUrl()" [routerLinkActive]="'active'">register</a>
+    <a [routerLink]="RoutePaths.login.toUrl()" [routerLinkActive]="'active'">login</a>
+</nav>
+
 <nav-bar></nav-bar>
 
-<!-- <login-modal></login-modal> -->
-
-<register-modal></register-modal>
+<router-outlet [routes]="Routes.all"></router-outlet>

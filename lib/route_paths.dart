@@ -1,9 +1,16 @@
 import 'package:angular_router/angular_router.dart';
 
 class RoutePaths {
-  static final dashboard = RoutePath(path: 'dashboard');
+  static final register = RoutePath(path: 'register');
 
-  static final logbook = RoutePath(path: 'logbook');
-  static final vehicles = RoutePath(path: 'vehicles');
-  static final operators = RoutePath(path: 'operators');
+  static final login = RoutePath(path: 'login');
+
+    static final register_user = RoutePath(
+    path: '${register.path}/user',
+  );
+
+      static final register_driver = RoutePath(
+    path: '${register.path}/driver',
+  );
+
 }

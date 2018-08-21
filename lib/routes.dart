@@ -2,41 +2,41 @@ import 'package:angular_router/angular_router.dart';
 
 import 'route_paths.dart';
 
-// import '../logbook/logbook_component.template.dart' as logbook_template;
-// import '../operators/operators_component.template.dart' as operators_template;
-// import '../dashboard/dashboard_component.template.dart' as dashboard_template;
-// import '../vehicles/vehicles_component.template.dart' as vehicles_template;
+import 'login/login_component.template.dart' as login_template;
 
+import 'register/register_component.template.dart' as register_template;
+import 'register-driver/register_driver_component.template.dart'
+    as register_driver_template;
+import 'register-user/register_user_component.template.dart'
+    as register_user_template;
 
-// export 'route_paths.dart';
+export 'route_paths.dart';
 
-// class Routes {
-//   static final dashboard = RouteDefinition(
-//     routePath: RoutePaths.dashboard,
-//     component: dashboard_template.DashboardComponentNgFactory,
-//   );
+class Routes {
+    static final login = RouteDefinition(
+    routePath: RoutePaths.login,
+    component: login_template.LoginComponentNgFactory,
+  );
 
-//   static final logbook = RouteDefinition(
-//     routePath: RoutePaths.logbook,
-//     component: logbook_template.LogbookComponentNgFactory,
-//   );
+  static final register = RouteDefinition(
+    routePath: RoutePaths.register,
+    component: register_template.RegisterComponentNgFactory,
+  );
 
-//     static final vehicles = RouteDefinition(
-//     routePath: RoutePaths.vehicles,
-//     component: vehicles_template.VehiclesComponentNgFactory,
-//   );
+  static final register_user = RouteDefinition(
+    routePath: RoutePaths.register_user,
+    component: register_user_template.RegisterUserComponentNgFactory,
+  );
 
-//   static final operators = RouteDefinition(
-//     routePath: RoutePaths.operators,
-//     component: operators_template.OperatorsComponentNgFactory,
-//   );
+  static final register_driver = RouteDefinition(
+    routePath: RoutePaths.register_driver,
+    component: register_driver_template.RegisterDriverComponentNgFactory,
+  );
 
-
-//   static final all = <RouteDefinition>[
-//     logbook,
-//     operators,
-//     dashboard,
-//     vehicles,
-    
-//   ];
-// }
+  static final all = <RouteDefinition>[
+    login,
+    register,
+    register_user,
+    register_driver
+  ];
+}
