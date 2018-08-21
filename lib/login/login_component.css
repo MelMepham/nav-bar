@@ -1,0 +1,83 @@
+.create-account-page {
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .create-account-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 30px;
+    /* margin-bottom: 50px; */
+  }
+
+  .container {
+    width: 50%;
+    background-color: white;
+    margin: 0 auto;  
+    margin-top: 5%;   
+    border-radius: 3%;
+    border: 2px var(--navy);
+  }
+  
+  /* .create-account-form .btn {
+    height: 34px;
+    font-size: 14px;
+  } */
+  
+  .create-account-form .btn:disabled {
+    pointer-events: none;
+  }
+  
+  .create-account-form .create-account-button {
+    margin-top: 10px;
+  }
+  
+  .create-account-form .back-to-login-button {
+    margin-top: 15px;
+    width: 100%;
+  }
+  
+  .create-account-form .back-to-login-button i {
+    margin-left: -18px;
+  }
+  
+  .create-account-form .form-field.compact .form-label {
+    font-size: 13px;
+  }
+
+  .button-success {
+    background: var(--blue);
+    color: white;
+}
+  
+.login-text {
+    font-size: 15px;
+    padding-bottom:7px;
+    padding-top:15px;
+    color: var(--navy-text);
+}
+
+.title {
+    font-size: 30px;
+    color: var(--navy-text);
+}
+
+.link-text {
+    font-size: 10px;
+    padding: 8px;
+    color: var(--navy-text);
+    font-style: italic;
+}
+
+.right-text {
+    text-align: right !important; 
+}
+
+a, a:hover, a:active, a:focus {
+    color: var(--navy-text);
+    text-decoration: none;
+}
