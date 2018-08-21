@@ -1,0 +1,256 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+/* ---------- Outline ---------- */
+
+.btn,
+select,
+a {
+  outline: none !important;
+}
+
+/* ---------- Button ---------- */
+
+/* .btn {
+  padding: 0 10px;
+  font-size: 10pt;
+  height: 32px;
+  background-color: var(--grey-fill-1);
+  border-color: var(--grey-border-1);
+  color: var(--navy);
+  transition: background-color 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--grey-fill-1-hover);
+  border-color: var(--grey-border-1);
+}
+
+.btn:active,
+.btn:active:hover,
+.btn:active:focus {
+  box-shadow: none;
+  background-color: var(--grey-fill-1-press);
+  border-color: var(--grey-border-1);
+}
+
+.btn:disabled {
+  pointer-events: none;
+} */
+
+/* ---------- Green button ---------- */
+
+.btn.green-button {
+  background-color: var(--green);
+  color: white;
+  font-weight: 700;
+  border: none;
+}
+
+.btn.green-button:hover,
+.btn.green-button:focus {
+  background-color: var(--green-hover);
+  color: white;
+}
+
+.btn.green-button:active,
+.btn.green-button:active:hover,
+.btn.green-button:active:focus {
+  background-color: var(--green-press);
+  color: white;
+}
+
+/* ---------- Navy button ---------- */
+
+.btn.navy-button {
+  background-color: var(--navy);
+  color: white;
+  font-weight: 700;
+  border: none;
+}
+
+.btn.navy-button:hover,
+.btn.navy-button:focus {
+  background-color: var(--navy-hover);
+  color: white;
+}
+
+.btn.navy-button:active,
+.btn.navy-button:active:hover,
+.btn.navy-button:active:focus {
+  background-color: var(--navy-press);
+  color: white;
+}
+
+/* ---------- Red button ---------- */
+
+.btn.red-button {
+  background-color: var(--red);
+  color: white;
+  font-weight: 700;
+  border: none;
+}
+
+.btn.red-button:hover,
+.btn.red-button:focus {
+  background-color: var(--red-hover);
+  color: white;
+}
+
+.btn.red-button:active,
+.btn.red-button:active:hover,
+.btn.red-button:active:focus {
+  background-color: var(--red-press);
+  color: white;
+}
+
+/* ---------- Dropdown menu button ---------- */
+
+/* .dropdown-toggle.btn,
+.open .dropdown-toggle.btn {
+  box-shadow: none;
+}
+
+.dropdown-toggle .caret {
+  color: var(--grey-fill-4);
+  margin: 0 0 2px 3px;
+}
+
+.dropup .dropdown-toggle .caret {
+  margin: 0 0 4px 2px;
+}
+
+.open .dropdown-toggle.btn,
+.open .dropdown-toggle.btn:hover,
+.open .dropdown-toggle.btn:focus {
+  background-color: var(--grey-fill-1-press);
+  border-color: var(--grey-border-1);
+} */
+
+/* ---------- Dropdown menu ---------- */
+
+.dropdown-menu {
+  border-color: var(--grey-border-3);
+}
+
+.dropdown-menu > li > a {
+  padding: 6px 18px;
+  color: var(--navy);
+  background-color: transparent;
+}
+
+.dropdown-menu > .active > a {
+  background-color: transparent;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.dropdown-menu > li.active > a:focus,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > .active > a:hover {
+  background-color: var(--grey-fill-2);
+  color: var(--navy);
+}
+
+.dropdown-menu .divider {
+  margin: 6px 0;
+}
+
+/* ---------- Input ---------- */
+
+.form-control {
+  padding: 0 8px;
+  height: 32px;
+  font-size: 10pt;
+  color: var(--navy);
+  border-color: var(--grey-border-1);
+  appearance: textfield;
+  /* Prevents spinners from appearing in Firefox. */
+}
+
+.form-control::-webkit-inner-spin-button,
+.form-control::-webkit-outer-spin-button {
+  /* Prevents spinners from appearing in Chrome / Safari. */
+  display: none;
+  margin: 0;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/* ---------- Dialog ---------- */
+
+.modal-content {
+  border-radius: 4px;
+}
+
+/* ---------- Tooltip ---------- */
+
+.tooltip {
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+}
+
+.tooltip .tooltip-inner {
+  padding: 5px 8px;
+}
+
+/* ---------- Form divider ---------- */
+
+.form-divider-line {
+  background-color: var(--grey-border-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1px;
+}
+
+.form-divider-text {
+  background-color: white;
+  color: var(--grey-text);
+  padding: 0 6px 3px 6px;
+  font-size: 10pt;
+}
+
+/* ---------- General useful stuff ---------- */
+
+.grower {
+  flex-grow: 1;
+}
+
+
+body {
+    --navy: #3D5368;
+    --navy-hover: rgb(59, 71, 84);
+    --navy-press: rgb(49, 58, 68);
+    --blue: rgb(49, 148, 219);
+    --blue-hover: rgb(52, 161, 239);
+    --green: #5fba7d;
+    --green-hover: #57ae74;
+    --green-press: #52a16c;
+    --red: rgb(255, 99, 71);
+    --red-hover: rgb(244, 93, 67);
+    --red-press: rgb(232, 80, 53);
+    --grey-fill-1: #f9fafb;
+    --grey-fill-1-hover: #f0f1f2;
+    --grey-fill-1-press: #ebeced;
+    --grey-fill-2: #f5f6f7;
+    --grey-fill-3: #eaeaea;
+    --grey-fill-4: #bebebe;
+    --grey-border-1: rgba(34, 36, 38, 0.15);
+    --grey-border-2: rgba(0, 0, 0, 0.15);
+    --grey-border-3: #cdcdcd;
+    --grey-text: #828282;
+    --off-white-text: rgba(255, 255, 255, 0.65);
+    --pale-yellow: #fcf9ee;
+    --pale-yellow-hover: #f7f2e0;
+    --pale-yellow-press: #efe7cb;
+  
+    --max-width: 1080px;
+  }
