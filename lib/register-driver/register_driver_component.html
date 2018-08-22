@@ -1,46 +1,51 @@
 <div class="pure-g create-account-page">
-        <div class="pure-u-1 pure-u-lg-3-5">
-    
-            <div class="container create-account-form">
-                <div class="title">REGISTER AS A DRIVER</div>
-    
-                <div class="login-text">First name</div>
-                <input class="input-box" type="text" name="UserName" placeholder="First name" required/>
-    
-                <div class="login-text input-box">Family name</div>
-                <input class="input-box" type="text" name="Password" placeholder="Family name" required/>
+    <div class="pure-u-1 pure-u-lg-3-5">
 
-                <div class="login-text input-box">E-mail</div>
-                <input class="input-box" type="text" name="Password" placeholder="Email" required/>
+        <form (ngSubmit)="onSubmit()" class="container create-account-form">
+            <div class="title">REGISTER AS A DRIVER</div>
 
-                <div class="login-text input-box">Drivers Licence</div>
-                <input class="input-box" type="text" name="Password" placeholder="Drivers Licnce" required/>
+            <label class="login-text input-box" for="firstName">First Name&nbsp;</label>
+            <input class="input-box" type="text" id="firstName" [(ngModel)]="model.firstName" ngControl="firstName" #firstName="ngForm"
+                [ngClass]="setCssValidityClass(firstName)" ng-model="required"/>
+            <p [hidden]="firstName.valid" class="invalid-feedback required-text">First Name is required</p>
 
-                <div class="login-text input-box">Password</div>
-                <input class="input-box" type="text" name="Password" placeholder="Password" required/>
+            <label class="login-text">Family Name&nbsp;</label>
+            <input class="input-box" type="text" id="familyName" [(ngModel)]="model.familyName" ngControl="familyName" #familyName="ngForm"
+                [ngClass]="setCssValidityClass(familyName)" ng-model="required"/>
+            <p [hidden]="familyName.valid" class="invalid-feedback required-text">Family Name is required</p>
 
-                <div class="login-text input-box">Re enter Password</div>
-                <input class="input-box" type="text" name="Password" placeholder="re-enter Password" required/>
-    
-                <br/>
-                <button class="button-success pure-button" type="submit" >Register</button>
-    
-                <!-- <div class="pure-g">
-                    <div class="pure-u-1-2">
-                        <p [routerLink]="RoutePaths.register.toUrl()" [routerLinkActive]="'active'" class="link-text">
-                            Register
-                        </p>
-                    </div>
-    
-                    <div class="pure-u-1-2">
-                        <p class="right-text link-text">
-                            Forgot your Password?
-                        </p>
-    
-                    </div>
-                </div> -->
-    
+            <label class="login-text">E-mail&nbsp;</label>
+            <input class="input-box" type="text" id="email" [(ngModel)]="model.email" ngControl="email" #email="ngForm" [ngClass]="setCssValidityClass(email)"
+            ng-model="required"/>
+            <p *ngIf="!emailValid" class="invalid-feedback required-text">Valid email is required</p>
+
+            <label class="login-text">Drivers Licence&nbsp;</label>
+            <input class="input-box" type="driversLicence" id="driversLicence" [(ngModel)]="model.driversLicence" ngControl="driversLicence"
+                #driversLicence="ngForm" [ngClass]="setCssValidityClass(driversLicence)" ng-model="required"/>
+            <p [hidden]="driversLicence.valid" class="invalid-feedback required-text">Drivers Licence is required</p>
+
+            <label class="login-text">Password&nbsp;</label>
+            <input class="input-box" type="password" id="password" [(ngModel)]="model.password" ngControl="password" #password="ngForm"
+                [ngClass]="setCssValidityClass(password)" ng-model="required"/>
+
+            <label class="login-text">Confirm Password&nbsp;</label>
+            <input class="input-box" type="password" id="confirmPassword" [(ngModel)]="model.confirmPassword" ngControl="confirmPassword"
+                #confirmPassword="ngForm" [ngClass]="setCssValidityClass(confirmPassword)" ng-model="required"/>
+            <p *ngIf="!passwordMatches" class="invalid-feedback required-text">Passwords needs to match</p>
+
+            <br/>
+            <button class="button-success pure-button" type="submit">Register</button>
+
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <p [routerLink]="RoutePaths.login.toUrl()" [routerLinkActive]="'active'" class="link-text">
+                        Already have an account?
+                    </p>
+                </div>
+
             </div>
-    
-        </div>
+
+        </form>
+
     </div>
+</div>

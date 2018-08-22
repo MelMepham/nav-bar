@@ -12,11 +12,15 @@
             </p>
 
             <label class="login-text input-box" onfocus="this.value=''" for="password">Password&nbsp;</label>
-            <input class="input-box" type="text" id="Password" [(ngModel)]="model.password" ngControl="password" #password="ngForm" [ngClass]="setCssValidityClass(password)"
-                required/>
+            <input class="input-box" type="password" id="Password" [(ngModel)]="model.password" ngControl="password" #password="ngForm"
+                [ngClass]="setCssValidityClass(password)" required/>
             <p [hidden]="password.valid" class="invalid-feedback required-text">
                 Password is required
             </p>
+            <br/>
+            <label for="remember" class="pure-checkbox">
+                <input id="remember" type="checkbox"> Remember me
+            </label>
 
             <br/>
             <button class="button-success pure-button" type="submit">Log in</button>

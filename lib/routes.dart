@@ -1,16 +1,17 @@
 import 'package:angular_router/angular_router.dart';
 
-
 import 'login/login_component.template.dart' as login_template;
 import 'register/register_component.template.dart' as register_template;
-import 'register-driver/register_driver_component.template.dart' as register_driver_template;
-import 'register-user/register_user_component.template.dart' as register_user_template;
+import 'register-driver/register_driver_component.template.dart'
+    as register_driver_template;
+import 'register-user/register_user_component.template.dart'
+    as register_user_template;
 
 import 'route_paths.dart';
 export 'route_paths.dart';
 
 class Routes {
-    static final login = RouteDefinition(
+  static final login = RouteDefinition(
     routePath: RoutePaths.login,
     component: login_template.LoginComponentNgFactory,
   );
@@ -34,6 +35,11 @@ class Routes {
     login,
     register,
     register_user,
-    register_driver
+    register_driver,
+    RouteDefinition.redirect(
+      path: '',
+      redirectTo: RoutePaths.login.toUrl(),
+      useAsDefault: true,
+    ),
   ];
 }

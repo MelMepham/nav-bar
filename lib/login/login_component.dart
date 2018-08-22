@@ -11,21 +11,20 @@ import '../routes.dart';
   exports: [RoutePaths, Routes],
 )
 class LoginComponent {
-bool submitted = false;
+  bool submitted = false;
 
-void onSubmit() => print(model.username);
+  void onSubmit() => print(model.username);
 
-Login model = Login('Username', 'Password');
+  Login model = Login('Username', 'Password');
 
-Map<String, bool> setCssValidityClass(NgControl control) {
-  final validityClass = control.valid == true ? 'is-valid' : 'is-invalid';
-  return {validityClass: true};
-}
+  Map<String, bool> setCssValidityClass(NgControl control) {
+    final validityClass = control.valid == true ? 'is-valid' : 'is-invalid';
+    return {validityClass: true};
+  }
 }
 
 class Login {
   String username, password;
 
   Login(this.username, this.password);
-
 }

@@ -377,6 +377,19 @@ a, a:hover, a:active, a:focus {
   .input-box {
     padding: 10px !important;
   }
+
+  .is-invalid {
+    border: 1px red solid !important;
+}
+
+.required-text {
+    color: red;
+    font-size: 10px;
+    padding: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+}
+
   /* ---------- End of Register // Login // forgot password ---------- */
 
   .info-bar-root {
