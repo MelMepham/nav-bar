@@ -11,8 +11,6 @@
 </div>
 
 
-
-
 <div class="pure-g create-account-page">
     <div class="pure-u-1 pure-u-lg-3-5">
 
@@ -22,19 +20,21 @@
 
             <div class="pure-g">
 
-                <div class="pure-u-1-2">
+                <div class="pure-u-lg-1-2">
                     <img class="circle-img center" src="images/worker.jpg" />
                     <br/>
                     <button [routerLink]="RoutePaths.register_driver.toUrl()" [routerLinkActive]="'active'" class="button-success pure-button center button">
                         I am a Driver
                     </button>
+                    <br/>
+
                 </div>
 
-                <div class="pure-u-1-2">
+                <div class="pure-u-lg-1-2">
                     <img class="circle-img center" src="images/worker.jpg" />
                     <br/>
                     <button [routerLink]="RoutePaths.register_user.toUrl()" [routerLinkActive]="'active'" class="button-success pure-button center button">
-                        I work for a Transport Operator
+                        I manage Drivers
                     </button>
                 </div>
 

@@ -29,7 +29,7 @@
                 <a href="#">Link 3</a>
             </div>
         </div>
-        
+
         <div class="dropdown">
             <a href="#"><img class="navbar-icons pure-menu-has-children pure-menu-allow-hover" src="images/icons/user-circle-solid.svg"
                     height="30px" width="30px" /></a>
@@ -39,7 +39,53 @@
                 <a href="#">Link 3</a>
             </div>
         </div>
+    </div>
+</div>
 
+<div class="mobile">
+    <div class="mobile-menu">
+        <div class="pure-g menu-bar">
+            <div class="pure-u-1-3">
+                <a (click)="onClickMenu()"><img class="navbar-icons pure-menu-has-children pure-menu-allow-hover left" src="images/icons/bars-solid.svg"
+                        height="30px" width="30px" /></a>
+            </div>
+            <div class="pure-u-1-3">
+                <a href="#"><img class="navbar-icons center" src="images/white-logo.svg" height="30px" width="30px" /></a>
+            </div>
+            <div class="pure-u-1-3">
+                <a (click)="onClickNotifications()"><img class="navbar-icons pure-menu-has-children pure-menu-allow-hover right"
+                        src="images/icons/bell-regular.svg" height="30px" width="30px" /></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-container">
+        <div class="menu-bar">
+
+            <div *ngIf="menu">
+                <div class="pure-menu">
+                    <span class="pure-menu-heading">MENU</span>
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link full-width">DASHBOARD</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">LOGBOOK</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">VEHICLES</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">OPERATORS</a></li>
+                        <li class="pure-menu-heading">PROFILE</li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">SETTINGS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div *ngIf="notifications">
+                <div class="pure-menu">
+                    <span class="pure-menu-heading">NOTIFICATIONS</span>
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Notification 1</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Notification</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
