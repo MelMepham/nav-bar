@@ -58,34 +58,43 @@
             </div>
         </div>
     </div>
+</div>
 
-    <div class="mobile-container">
-        <div class="menu-bar">
-
-            <div *ngIf="menu">
-                <div class="pure-menu">
-                    <span class="pure-menu-heading">MENU</span>
-                    <ul class="pure-menu-list">
-                        <li class="pure-menu-item"><a href="#" class="pure-menu-link full-width">DASHBOARD</a></li>
-                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">LOGBOOK</a></li>
-                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">VEHICLES</a></li>
-                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">OPERATORS</a></li>
-                        <li class="pure-menu-heading">PROFILE</li>
-                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">SETTINGS</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div *ngIf="notifications">
-                <div class="pure-menu">
-                    <span class="pure-menu-heading">NOTIFICATIONS</span>
-                    <ul class="pure-menu-list">
-                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Notification 1</a></li>
-                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Notification</a></li>
-
-                    </ul>
-                </div>
-            </div>
+<div class="mobile-container">
+    <div class="mobile-menu-bar">
+        <div *ngIf="menu">
+            <div class="mobile-menu-bar-heading">MENU</div>
+            <div class="mobile-menu-bar-links"><a href="#">DASHBOARD</a></div>
+            <div class="mobile-menu-bar-links"><a href="#">LOGBOOK</a></div>
+            <div class="mobile-menu-bar-links"><a href="#">VEHICLES</a></div>
+            <div class="mobile-menu-bar-links"><a href="#">OPERATORS</a></div>
+            <div class="mobile-menu-bar-heading">PROFILE</div>
+            <div class="mobile-menu-bar-links"><a href="#">VEHICLES</a></div>
+            <div class="mobile-menu-bar-links"><a href="#">OPERATORS</a></div>
         </div>
+
+        <div *ngIf="notifications">
+                <div class="mobile-menu-bar-heading right">NOTIFICATIONS</div>
+                <div class="mobile-menu-bar-links right"><a href="#">Motification 1</a></div>
+            </div>
     </div>
 
+        <!-- <ul class="mobile-menu-list">
+                    <li class="mobile-menu-bar-links"><a href="#">DASHBOARD</a></li>
+                    <li class="mobile-menu-bar-links"><a href="#">LOGBOOK</a></li>
+                    <li class="mobile-menu-bar-links"><a href="#">VEHICLES</a></li>
+                    <li class="mobile-menu-bar-links"><a href="#">OPERATORS</a></li>
+                    <li class="mobile-link-heading">PROFILE</li>
+                    <li class="mobile-menu-bar-links"><a href="#">SETTINGS</a></li>
+                </ul> -->
+        <!-- <div *ngIf="notifications">
+            <div class="pure-menu">
+                <span class="pure-menu-heading">NOTIFICATIONS</span>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Notification 1</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Notification</a></li>
+
+                </ul>
+            </div>
+        </div> -->
 </div>
