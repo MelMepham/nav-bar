@@ -330,10 +330,11 @@ body {
 }
 
 .link-text {
-    font-size: 10px;
+    font-size: 13px;
     padding: 8px;
     color: var(--navy-text);
     font-style: italic;
+    cursor: pointer;
 }
 
 .right-text {
@@ -373,6 +374,9 @@ a, a:hover, a:active, a:focus {
 
   }
 
+  .input-box {
+    padding: 10px !important;
+  }
   /* ---------- End of Register // Login // forgot password ---------- */
 
   .info-bar-root {

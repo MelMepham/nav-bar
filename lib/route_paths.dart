@@ -5,12 +5,11 @@ class RoutePaths {
 
   static final login = RoutePath(path: 'login');
 
-    static final register_user = RoutePath(
+  static final register_user = RoutePath(
     path: '${register.path}/user',
   );
 
-      static final register_driver = RoutePath(
+  static final register_driver = RoutePath(
     path: '${register.path}/driver',
   );
-
 }

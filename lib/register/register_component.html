@@ -21,19 +21,30 @@
             <br/>
 
             <div class="pure-g">
+
                 <div class="pure-u-1-2">
                     <img class="circle-img center" src="images/worker.jpg" />
                     <br/>
-                    <button class="button-success pure-button center">I am a Driver</button>
+                    <button [routerLink]="RoutePaths.register_driver.toUrl()" [routerLinkActive]="'active'" class="button-success pure-button center button">
+                        I am a Driver
+                    </button>
                 </div>
 
                 <div class="pure-u-1-2">
                     <img class="circle-img center" src="images/worker.jpg" />
                     <br/>
-                    <button class="button-success pure-button center">I work for a Transport Operator</button>
+                    <button [routerLink]="RoutePaths.register_user.toUrl()" [routerLinkActive]="'active'" class="button-success pure-button center button">
+                        I work for a Transport Operator
+                    </button>
                 </div>
+
             </div>
-
+            <div class="pure-u-1">
+                <br/>
+                <p [routerLink]="RoutePaths.login.toUrl()" [routerLinkActive]="'active'" class="link-text center">
+                    Already have an account?
+                </p>
+            </div>
         </div>
 
     </div>

@@ -4,6 +4,11 @@
   
 }
 .center {
-  margin:auto;
-  display:block;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.button {
+  width: 80%;
 }

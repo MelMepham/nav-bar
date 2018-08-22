@@ -1,15 +1,12 @@
 import 'package:angular_router/angular_router.dart';
 
-import 'route_paths.dart';
 
 import 'login/login_component.template.dart' as login_template;
-
 import 'register/register_component.template.dart' as register_template;
-import 'register-driver/register_driver_component.template.dart'
-    as register_driver_template;
-import 'register-user/register_user_component.template.dart'
-    as register_user_template;
+import 'register-driver/register_driver_component.template.dart' as register_driver_template;
+import 'register-user/register_user_component.template.dart' as register_user_template;
 
+import 'route_paths.dart';
 export 'route_paths.dart';
 
 class Routes {
